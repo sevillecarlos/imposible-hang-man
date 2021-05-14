@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HangMan Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/vendors/css/grid.css" />
+    <link rel="stylesheet" href="./src/vendors/css/normalize.css" />
+  </head>
+  <body>
+    <div class="section group">
+      <div class="col span-3-of-3"><h5 class="title">hang man</h5></div>
+    </div>
+    <div class="section group">
+      <section class="btn-game-container">
+        <div class="col span-1-of-2">
+          <button class="reset-game-btn">reset game</button>
+        </div>
+      </section>
+      <section class="btn-game-container">
+        <div class="col span-1-of-2">
+          <div class="container-btn-show-btn"></div>
+        </div>
+      </section>
+    </div>
+
+    
+    <div class="section group">
+      <section class="game-board">
+        <div class="col span-3-of-3"> 
+        <div class="btn-container"></div>
+      </section>
+    </div>
+    <div class="section group">
+      <section class="game-board">
+        <div class="col span-3-of-3"> 
+          <div class="container-hangman">
+            <canvas id="hangman" width="180" height="250"></canvas>
+          </div>
+        </section>
+    </div>
+    <div class="section group">
+      <section class="game-board">
+        <div class="col span-3-of-3"> 
+          <div class="text-container"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+

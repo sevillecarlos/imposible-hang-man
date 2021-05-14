@@ -1,0 +1,21 @@
+{
+  "name": "hang-man",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sevillecarlos/hang-man.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sevillecarlos/hang-man/issues"
+  },
+  "homepage": "https://github.com/sevillecarlos/hang-man#readme"
+}
