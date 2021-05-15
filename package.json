@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/sevillecarlos/hang-man/issues"
   },
-  "homepage": "https://github.com/sevillecarlos/hang-man#readme"
+  "homepage": "https://github.com/sevillecarlos/hang-man#readme",
+  "dependencies": {
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
 }
