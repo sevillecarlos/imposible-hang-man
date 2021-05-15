@@ -90,6 +90,9 @@ canvas {
 .text-container {
   text-align: center;
 }
+.signature{
+  font-size: 25px;
+}
 
 /***************************************************************************/
 /* Big tablets to 1200px*/
@@ -102,17 +105,35 @@ canvas {
     padding-bottom: 25px;
   }
   .lines {
-    width: 60px;
+    width: 35px;
   }
   canvas {
-    width: 200px;
+    width: 130px;
+  }
+    .signature{
+    font-size: 15px;
   }
 }
 
 /* Small tablets to big tablets: from 768 to 1032*/
 @media only screen and (max-width: 1032px) {
+  .title{
+    font-size: 80px;
+  }
   .definition-para {
     font-size: 25px;
+  }
+  .signature{
+    font-size: 30px;
+  }
+  .lines {
+    width: 30px;
+  }
+  canvas {
+    width: 200px;
+  }
+  p{
+    font-size: 50px;
   }
 }
 
@@ -174,6 +195,9 @@ canvas {
     font-size: 15px;
     padding-bottom: 25px;
   }
+  .signature{
+    font-size: 15px;
+  }
 }
 
 /*Small Phone from 0 to 480px*/
@@ -232,5 +256,8 @@ canvas {
   }
   .definition-para {
     font-size: 20px;
+  }
+  .signature{
+    font-size: 15px;
   }
 }
