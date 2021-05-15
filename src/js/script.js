@@ -90,7 +90,6 @@ const winnerAlert = () => {
 
 const startGame = async () => {
   const { word, definition } = await getWord();
-  console.log(word)
   randomWord = word.toLowerCase();
   definitionPara.textContent = `def: ${definition.toLowerCase()}`;
   createLines(randomWord);
