@@ -1,2 +1,2 @@
 # hang-man
-url : https://hangman-carlos-sevilla.netlify.app/
+https://imposiblehangman-carlos-sevilla.netlify.app/
