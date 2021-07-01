@@ -1,1 +1,1 @@
-export const API = "https://random-words-api.vercel.app/word";
+ export const API = "https://random-words-api.vercel.app/word";
