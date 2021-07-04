@@ -73,7 +73,7 @@ const removeAtrElement = (el) => el.removeAttribute("disabled");
 const updateLines = (val, letter) => {
   document.querySelectorAll(".lines")[val].innerText = letter;
   document.querySelectorAll(".lines")[val].style["border-bottom"] =
-    "transparent";
+    "none";
 };
 
 const allButtonLetters = document.querySelectorAll(".buttons-letters");
@@ -98,13 +98,13 @@ const startGame = async () => {
 const drawHangMan = (part) => {
   switch (part) {
     case "gallows":
-      contextHangMan.strokeStyle = " RGBA(240, 248, 255, 0.70)";
+      contextHangMan.strokeStyle = "white";
       contextHangMan.lineWidth = 10;
       contextHangMan.beginPath();
       contextHangMan.moveTo(175, 225);
       contextHangMan.lineTo(5, 225);
-      contextHangMan.moveTo(15, 225);//Hexeris
-      contextHangMan.lineTo(25, 5);
+      contextHangMan.moveTo(15, 225);
+      contextHangMan.lineTo(15, 5);
       contextHangMan.lineTo(100, 5);
       contextHangMan.lineTo(100, 25);
       contextHangMan.stroke();
