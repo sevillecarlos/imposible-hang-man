@@ -22,7 +22,7 @@ body {
     rgba(22, 138, 173, 1) 80%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#99d98c",endColorstr="#168aad",GradientType=1);
-  font-family: 'Oldenburg', cursive;
+  font-family: "Oldenburg", cursive;
 }
 
 button {
@@ -30,7 +30,7 @@ button {
   padding: 10px 20px;
   font-family: "Fredericka the Great", cursive;
   font-size: 30px;
-  border: none;  
+  border: none;
   box-shadow: 5px 10px 19px -11px rgba(0, 0, 0, 1);
   -webkit-box-shadow: 5px 10px 19px -11px rgba(0, 0, 0, 1);
   -moz-box-shadow: 5px 10px 19px -11px rgba(0, 0, 0, 1);
@@ -38,6 +38,8 @@ button {
 p {
   text-align: center;
   color: aliceblue;
+  display: inline-block;
+
   font-size: 50px;
 }
 h4 {
@@ -54,9 +56,6 @@ canvas {
   margin-top: 1%;
 }
 /***************************************************************************/
-#hangman{
-  color: blue;
-}
 .container {
   width: 50%;
   margin: 50px auto;
@@ -74,12 +73,13 @@ canvas {
   text-align: justify;
   width: 60px;
   text-align: center;
+  transition: 0.2s background-color;
 }
 .buttons-letters:hover:enabled {
   background-color: rgba(255, 255, 255, 0.384);
 }
-.buttons-letters:disabled{
-  background-color: rgba(192, 192, 192, 0.877);
+.buttons-letters:disabled {
+  background-color: rgba(3, 3, 3, 0.404);
 }
 
 .btn-game-container {
@@ -101,201 +101,264 @@ canvas {
   font-size: 50px;
   color: aliceblue;
   text-align: center;
-}
-
-.main-container {
-  margin-bottom: 0;
-  margin-top: 2%;
+  letter-spacing: 1px;
 }
 .lines {
-  width: 3%;
+  width: 4%;
   height: 60px;
   margin-left: 20px;
   margin-top: 1px;
   border-bottom: 3px solid RGBA(240, 248, 255, 0.51);
-  padding: 1%;
-  display: inline-block;
+  padding: 10px;
 }
-
 .result {
-  font-size: 155px;
+  font-size: 100px;
   text-align: center;
+  color: rgb(143, 214, 36);
   letter-spacing: 5px;
 }
 .btn-container {
   margin: 5px 100px;
 }
 .text-container {
-  text-align: center;
   width: auto;
-  height: 100px;
+  overflow: auto;
+  height: 100%;
+  text-align: center;
   border-radius: 50px;
   box-shadow: -2px 14px 24px 1px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: -2px 14px 24px 1px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: -2px 14px 24px 1px rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
 }
 
 /***************************************************************************/
 /* Big tablets to 1200px*/
 @media only screen and (max-width: 1200px) {
+    .container {
+    width: 90%;
+    margin: 15% auto;
+    border-radius: 50px;
+  }
   .title {
-    font-size: 120px;
+    font-size: 40px;
+  }
+  .buttons-letters {
+    font-size: 30px;
+    width: 60px;
+  }
+  .btn-container {
+    margin: 5px 20px;
+  }
+  .reset-game-btn,
+  .btn-show-word {
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
   }
   .definition-para {
-    font-size: 15px;
-    padding-bottom: 25px;
+    font-size: 25px;
+  }
+  #hangman {
+    width: 170px;
+    height: 205px;
+    padding: 15px;
+  }
+  .text-container {
+    height: auto;
+    width: auto;
+    margin-top: 15px;
+    border-radius: 40px;
+    padding-bottom: 5px;
+  }
+  p {
+    font-size: 40px;
   }
   .lines {
-    width: 35px;
+    width: 30px;
+    height: 50px;
+    
+    margin-left: 2%;
+    margin-top: 2px;
   }
-  canvas {
-    width: 130px;
+  button {
+    border-radius: 20px;
   }
-  .signature {
-    font-size: 15px;
+  .result {
+    font-size: 100px;
   }
 }
 
 /* Small tablets to big tablets: from 768 to 1032*/
 @media only screen and (max-width: 1032px) {
+  .container {
+    width: 90%;
+    margin: 15% auto;
+    border-radius: 50px;
+  }
   .title {
-    font-size: 80px;
+    font-size: 40px;
+  }
+  .buttons-letters {
+    font-size: 30px;
+    width: 60px;
+  }
+  .btn-container {
+    margin: 5px 20px;
+  }
+  .reset-game-btn,
+  .btn-show-word {
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
   }
   .definition-para {
     font-size: 25px;
   }
-  .signature {
-    font-size: 30px;
+  #hangman {
+    width: 170px;
+    height: 205px;
+    padding: 15px;
+  }
+  .text-container {
+    height: auto;
+    width: auto;
+    margin-top: 15px;
+    border-radius: 40px;
+    padding-bottom: 5px;
+  }
+  p {
+    font-size: 40px;
   }
   .lines {
     width: 30px;
+    height: 50px;
+    
+    margin-left: 2%;
+    margin-top: 2px;
   }
-  canvas {
-    width: 200px;
+  button {
+    border-radius: 20px;
   }
-  p {
-    font-size: 50px;
+  .result {
+    font-size: 100px;
   }
 }
 
 /* Small phones to small tablets: from 481 to 767*/
 @media only screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+    margin: 20% auto;
+    border-radius: 50px;
+  }
   .title {
-    padding-top: 20px;
-    font-size: 35px;
-  }
-  .reset-game-btn,
-  .btn-show-word {
-    font-size: 20px;
-  }
-  .btn-game-container {
-    margin-top: 10px;
-    margin-right: 30%;
-  }
-  .container-btn-show-btn {
-    width: 140px;
-    height: 60px;
-    padding-top: 6px;
-  }
-  .buttons-letters {
-    background-color: snow;
-    margin-left: 5px;
     font-size: 30px;
   }
-  .btn-container {
-    margin: 5px 10px;
-  }
   .buttons-letters {
-    border-radius: 12px;
-    background-color: snow;
-    font-size: 15px;
-  }
-
-  canvas {
-    width: 80px;
-  }
-  p {
     font-size: 20px;
+    width: 15px;
   }
-  .lines {
-    height: 10px;
-    width: 1px;
-    margin-left: 15px;
-    margin-top: 2.5px;
-    padding: 5px 5px;
+  .btn-container {
+    margin: 2px 15px;
   }
-  .text-container {
-    margin-bottom: 10px;
-    padding: 10px 10px;
+  .reset-game-btn {
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
   }
-  .result {
-    font-size: 52px;
-    letter-spacing: 2px;
+  .btn-show-word {
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
   }
   .definition-para {
-    font-size: 15px;
-    padding-bottom: 25px;
+    font-size: 20px;
   }
-  .signature {
-    font-size: 15px;
+  #hangman {
+    width: 100px;
+    height: 135px;
+    padding: 15px;
+  }
+  .text-container {
+    height: auto;
+    width: auto;
+    margin-top: 15px;
+    border-radius: 40px;
+    padding-bottom: 5px;
+  }
+  p {
+    font-size: 30px;
+  }
+  .lines {
+    width: 20px;
+    height: 20px;
+    margin-left: 1%;
+    margin-top: 1px;
+  }
+  button {
+    border-radius: 15px;
+  }
+  .result {
+    font-size: 50px;
   }
 }
 
 /*Small Phone from 0 to 480px*/
 @media only screen and (max-width: 400px) {
+  .container {
+    width: 90%;
+    margin: 15% auto;
+    border-radius: 50px;
+  }
   .title {
-    padding-top: 20px;
-    font-size: 35px;
-  }
-  .reset-game-btn,
-  .btn-show-word {
-    font-size: 20px;
-  }
-
-  .container-btn-show-btn {
-    width: 140px;
-    height: 60px;
-    margin: auto 0;
+    font-size: 25px;
   }
   .buttons-letters {
-    background-color: snow;
-    margin-left: 5px;
-    font-size: 30px;
+    font-size: 15px;
+    width: 10px;
   }
   .btn-container {
-    margin: 5px 10px;
+    margin: 1px 10px;
   }
-  .buttons-letters {
-    border-radius: 12px;
-    background-color: snow;
-    font-size: 15px;
+  .reset-game-btn {
+    font-size: 10px;
+    padding: 5px;
+    text-align: center;
   }
-
-  canvas {
-    width: 80px;
-  }
-  p {
-    font-size: 20px;
-  }
-  .lines {
-    height: 10px;
-    width: 1px;
-    margin-left: 15px;
-    margin-top: 2.5px;
-    padding: 5px 5px;
-  }
-  .text-container {
-    margin-bottom: 50px;
-    padding: 10px 10px;
-  }
-  .result {
-    font-size: 52px;
-    letter-spacing: 2px;
+  .btn-show-word {
+    font-size: 10px;
+    padding: 5px;
+    text-align: center;
   }
   .definition-para {
-    font-size: 20px;
-  }
-  .signature {
     font-size: 15px;
+  }
+  #hangman {
+    width: 90px;
+    height: 125px;
+    padding: 15px;
+  }
+  .text-container {
+    height: auto;
+    width: auto;
+    margin-top: 10px;
+    border-radius: 40px;
+    padding-bottom: 5px;
+  }
+  p {
+    font-size: 25px;
+  }
+  .lines {
+    width: 15px;
+    height: 15px;
+    margin-left: 1%;
+    margin-top: 1px;
+  }
+  button {
+    border-radius: 15px;
+  }
+  .result {
+    font-size: 50px;
   }
 }

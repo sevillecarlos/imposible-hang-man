@@ -1,5 +1,5 @@
 import "regenerator-runtime/runtime.js";
-import {getWord} from './fecth'
+import { getWord } from "./fecth";
 /******************************************************************************/
 const btnContainer = document.querySelector(".btn-container");
 const textContainer = document.querySelector(".text-container");
@@ -27,7 +27,6 @@ let chances = 0;
 let randomWord = "";
 /******************************************************************************/
 
-
 const createAllLetters = () =>
   Array.from(
     {
@@ -39,7 +38,6 @@ const createAllLetters = () =>
 const clearHangMan = () =>
   contextHangMan.clearRect(0, 0, hangMan.width, hangMan.height);
 
-
 const createAllLetterBtn = (arr) => {
   arr.map((x) => {
     const lettersButton = document.createElement("button");
@@ -49,7 +47,7 @@ const createAllLetterBtn = (arr) => {
   });
 };
 //Create the buttons with all abc letters
-createAllLetterBtn(createAllLetters())
+createAllLetterBtn(createAllLetters());
 
 const createLines = (randomWord_) => {
   for (let i = 0; i < randomWord_.length; i++) {
@@ -72,8 +70,7 @@ const removeAtrElement = (el) => el.removeAttribute("disabled");
 
 const updateLines = (val, letter) => {
   document.querySelectorAll(".lines")[val].innerText = letter;
-  document.querySelectorAll(".lines")[val].style["border-bottom"] =
-    "none";
+  document.querySelectorAll(".lines")[val].style["border-bottom"] = "none";
 };
 
 const allButtonLetters = document.querySelectorAll(".buttons-letters");
@@ -83,7 +80,6 @@ const winnerAlert = () => {
   containerHangMan.innerHTML = "";
   const headerResult = document.createElement("h1");
   headerResult.className = "result";
-  headerResult.style.color = "green";
   headerResult.innerText = "Winner!";
   containerHangMan.appendChild(headerResult);
 };
@@ -100,13 +96,15 @@ const drawHangMan = (part) => {
     case "gallows":
       contextHangMan.strokeStyle = "white";
       contextHangMan.lineWidth = 10;
+      contextHangMan.lineCap = "round";
+      contextHangMan.lineJoin = "round";
       contextHangMan.beginPath();
       contextHangMan.moveTo(175, 225);
       contextHangMan.lineTo(5, 225);
       contextHangMan.moveTo(15, 225);
       contextHangMan.lineTo(15, 5);
       contextHangMan.lineTo(100, 5);
-      contextHangMan.lineTo(100, 25);
+      contextHangMan.lineTo(100, 20);
       contextHangMan.stroke();
       break;
 
