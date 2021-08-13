@@ -105,7 +105,7 @@ canvas {
 }
 .lines {
   width: 4%;
-  height: 60px;
+  height: 30px;
   margin-left: 20px;
   margin-top: 1px;
   border-bottom: 3px solid RGBA(240, 248, 255, 0.51);
@@ -125,13 +125,18 @@ canvas {
   overflow: auto;
   height: 100%;
   text-align: center;
-  border-radius: 50px;
-  box-shadow: -2px 14px 24px 1px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: -2px 14px 24px 1px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: -2px 14px 24px 1px rgba(0, 0, 0, 0.5);
   padding-bottom: 10px;
 }
-
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px;
+}
 /***************************************************************************/
 /* Big tablets to 1200px*/
 @media only screen and (max-width: 1200px) {
