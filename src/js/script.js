@@ -80,11 +80,11 @@ const winnerAlert = () => {
   containerHangMan.innerHTML = "";
   const headerResult = document.createElement("h1");
   headerResult.className = "result";
-  headerResult.innerText = "Winner!";
+  headerResult.innerText = "winner!";
   containerHangMan.appendChild(headerResult);
 };
 const startGame = async () => {
-  definitionPara.textContent = '...Loading word';
+  definitionPara.textContent = '...loading word';
   allButtonLetters.forEach((x) => disableElement(x));
   const { word, definition } = await getWord();
   randomWord = word.toLowerCase();
