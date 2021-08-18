@@ -9,6 +9,9 @@ export const getWord = async () => {
     }
   } catch (error) {
     console.log(error)
-   
+    return {
+      definition: "Calendar  ",
+      word: "Hemerology",
+    };
   }
 };
