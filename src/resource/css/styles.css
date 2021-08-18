@@ -88,6 +88,13 @@ h4 {
   font-size: 20px;
   padding: 10px;
 }
+
+.reset-game-btn:disabled {
+  background-color: rgba(3, 3, 3, 0.404);
+}
+.btn-show-word :disabled{
+  background-color: rgba(3, 3, 3, 0.404);
+}
 .def-container {
   text-align: center;
 }

@@ -84,10 +84,22 @@ const winnerAlert = () => {
   containerHangMan.appendChild(headerResult);
 };
 
+const promiseWord = new Promise((resolve, reject) => {
+  resolve(getWord());
+  //If the api get rejected send word for default word
+  reject({
+    definition: "Calendar  ",
+    word: "Hemerology",
+  });
+});
+
 const startGame = async () => {
-  const { word, definition } =  await getWord();
+  definitionPara.textContent = '...Loading word';
+  allButtonLetters.forEach((x) => disableElement(x));
+  const { word, definition } = await promiseWord;
   randomWord = word.toLowerCase();
   definitionPara.textContent = `def: ${definition.toLowerCase()}`;
+  allButtonLetters.forEach((x) => removeAtrElement(x));
   createLines(randomWord);
 };
 
