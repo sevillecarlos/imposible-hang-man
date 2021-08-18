@@ -92,7 +92,7 @@ h4 {
 .reset-game-btn:disabled {
   background-color: rgba(3, 3, 3, 0.404);
 }
-.btn-show-word :disabled{
+.btn-show-word:disabled{
   background-color: rgba(3, 3, 3, 0.404);
 }
 .def-container {
