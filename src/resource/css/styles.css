@@ -48,22 +48,16 @@ h4 {
   letter-spacing: 3px;
 }
 
-canvas {
-  text-align: center;
-  color: snow;
-  width: 180px;
-  margin-left: 40%;
-  margin-top: 1%;
-}
 /***************************************************************************/
+
 .container {
   width: 50%;
   margin: 50px auto;
   height: auto;
   border-radius: 100px;
-  box-shadow: -2px -4px 63px -19px rgba(0, 0, 0, 0.82);
-  -webkit-box-shadow: -2px -4px 63px -19px rgba(0, 0, 0, 0.82);
-  -moz-box-shadow: -2px -4px 63px -19px rgba(0, 0, 0, 0.82);
+  box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
 }
 .buttons-letters {
   background-color: transparent;
@@ -94,8 +88,12 @@ canvas {
   font-size: 20px;
   padding: 10px;
 }
+.def-container {
+  text-align: center;
+}
 .definition-para {
   font-size: 35px;
+  color: aliceblue;
 }
 .title {
   font-size: 50px;
@@ -125,8 +123,16 @@ canvas {
   overflow: auto;
   height: 100%;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+  border-radius: 50px;
+  box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
 }
+.container-hangman {
+  text-align: center;
+}
+
 .footer {
   position: fixed;
   left: 0;
@@ -134,13 +140,17 @@ canvas {
   width: 100%;
   color: white;
   text-align: center;
-  font-size: 30px;
+  font-size: 22px;
   padding: 15px;
+  box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
 }
+
 /***************************************************************************/
 /* Big tablets to 1200px*/
 @media only screen and (max-width: 1200px) {
-    .container {
+  .container {
     width: 90%;
     margin: 15% auto;
     border-radius: 50px;
@@ -182,7 +192,7 @@ canvas {
   .lines {
     width: 30px;
     height: 50px;
-    
+
     margin-left: 2%;
     margin-top: 2px;
   }
@@ -238,7 +248,7 @@ canvas {
   .lines {
     width: 30px;
     height: 50px;
-    
+
     margin-left: 2%;
     margin-top: 2px;
   }
@@ -293,12 +303,12 @@ canvas {
     padding-bottom: 5px;
   }
   p {
-    font-size: 30px;
+    font-size: 15px;
   }
   .lines {
-    width: 20px;
+    width: 6px;
     height: 20px;
-    margin-left: 1%;
+    margin-left: 3px;
     margin-top: 1px;
   }
   button {
@@ -307,20 +317,23 @@ canvas {
   .result {
     font-size: 50px;
   }
+  .footer {
+    font-size: 15px;
+  }
 }
 
 /*Small Phone from 0 to 480px*/
 @media only screen and (max-width: 400px) {
   .container {
     width: 90%;
-    margin: 15% auto;
+    margin: 5% auto;
     border-radius: 50px;
   }
   .title {
-    font-size: 25px;
+    font-size: 100%;
   }
   .buttons-letters {
-    font-size: 15px;
+    font-size: 100%;
     width: 10px;
   }
   .btn-container {
@@ -345,19 +358,20 @@ canvas {
     padding: 15px;
   }
   .text-container {
-    height: auto;
     width: auto;
-    margin-top: 10px;
-    border-radius: 40px;
-    padding-bottom: 5px;
+    overflow: auto;
+    height: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 50px;
   }
   p {
-    font-size: 25px;
+    font-size: 15px;
   }
   .lines {
-    width: 15px;
-    height: 15px;
-    margin-left: 1%;
+    width: 6px;
+    height: 10px;
+    margin-left: 3px;
     margin-top: 1px;
   }
   button {
@@ -365,5 +379,8 @@ canvas {
   }
   .result {
     font-size: 50px;
+  }
+  .footer {
+    font-size: 12px;
   }
 }
