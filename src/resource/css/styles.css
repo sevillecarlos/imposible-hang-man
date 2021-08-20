@@ -154,6 +154,15 @@ h4 {
   -moz-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
 }
 
+.footer a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.footer a:hover{
+  color: rgb(58, 61, 63);
+}
+
 /***************************************************************************/
 /* Big tablets to 1200px*/
 @media only screen and (max-width: 1200px) {
