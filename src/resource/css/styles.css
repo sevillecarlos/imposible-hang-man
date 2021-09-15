@@ -27,7 +27,7 @@ body {
 
 button {
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 2% 3%;
   font-family: "Fredericka the Great", cursive;
   border: none;
   box-shadow: 5px 10px 19px -11px rgba(0, 0, 0, 1);
@@ -38,8 +38,7 @@ p {
   text-align: center;
   color: aliceblue;
   display: inline-block;
-
-  font-size: 50px;
+  font-size: 200%;
 }
 h4 {
   text-align: center;
@@ -137,6 +136,7 @@ h4 {
 }
 .container-hangman {
   text-align: center;
+  width: 100%;
 }
 
 /***************************************************************************/
