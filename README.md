@@ -9,7 +9,6 @@ A classic game with a greater level of difficult to prove your deep knowledge of
 ## Bundler
 - Parcel 
 
-
 # Live Demo
 Try it! [Imposible Hangman ](https://imposiblehangman.netlify.app/).
 
@@ -24,13 +23,13 @@ Try it! [Imposible Hangman ](https://imposiblehangman.netlify.app/).
 # Author
 ## Carlos Alberto Sevilla Fernandez
 * Github: [@sevillecarlos](https://github.com/sevillecarlos)
-* LinkedIn: [Carlos Alberto Sevill Fernandez](https://github.com/sevillecarlos)
+* LinkedIn: [Carlos Alberto Sevilla Fernandez](https://github.com/sevillecarlos)
 
 # Contributing
 Contributions, issues and feature requests are welcome!
-Feel free to check the issues page.
+Feel free to check the [Issues Page](https://github.com/sevillecarlos/imposible-hang-man/issues).
 
 # License
-This project is MIT licensed.
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
 
 
