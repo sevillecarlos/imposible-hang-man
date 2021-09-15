@@ -52,12 +52,13 @@ h4 {
 
 .container {
   width: 50%;
-  margin: 50px auto;
+  margin: 2% auto;
   height: auto;
   border-radius: 100px;
   box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
+  position: relative;
 }
 .buttons-letters {
   background-color: transparent;
@@ -142,21 +143,22 @@ h4 {
 
 .footer {
   position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
-  color: white;
+  left: 0;
   text-align: center;
-  font-size: 22px;
+  bottom: 0;
+  font-size: 1vw;
   padding: 15px;
-  box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
 }
 
 .footer a{
   text-decoration: none;
   color: aliceblue;
+  box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
+  padding: 15px;
+  border-radius: 50px;
 }
 
 .footer a:hover{
@@ -168,7 +170,7 @@ h4 {
 @media only screen and (max-width: 1200px) {
   .container {
     width: 90%;
-    margin: 15% auto;
+    margin: 5% auto;
     border-radius: 50px;
   }
   .title {
@@ -224,7 +226,6 @@ h4 {
 @media only screen and (max-width: 1032px) {
   .container {
     width: 90%;
-    margin: 15% auto;
     border-radius: 50px;
   }
   .title {
@@ -274,13 +275,15 @@ h4 {
   .result {
     font-size: 100px;
   }
+  .footer{
+    font-size: 20px;
+  }
 }
 
 /* Small phones to small tablets: from 481 to 767*/
 @media only screen and (max-width: 767px) {
   .container {
     width: 90%;
-    margin: 20% auto;
     border-radius: 50px;
   }
   .title {
@@ -342,7 +345,6 @@ h4 {
 @media only screen and (max-width: 400px) {
   .container {
     width: 90%;
-    margin: 5% auto;
     border-radius: 50px;
   }
   .title {
@@ -378,7 +380,7 @@ h4 {
     overflow: auto;
     height: 100%;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     border-radius: 50px;
   }
   p {
@@ -386,7 +388,7 @@ h4 {
   }
   .lines {
     width: 6px;
-    height: 10px;
+    height: 5px;
     margin-left: 3px;
     margin-top: 1px;
   }
@@ -398,5 +400,15 @@ h4 {
   }
   .footer {
     font-size: 12px;
+    padding: 6px;
+  }
+  .footer a{
+    text-decoration: none;
+    color: aliceblue;
+    box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    border-radius: 50px;
   }
 }
