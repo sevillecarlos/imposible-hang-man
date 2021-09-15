@@ -10,12 +10,12 @@ A classic game with a greater level of difficult to prove your deep knowledge of
 - Parcel 
 
 # Live Demo
-Try it! [Imposible Hangman ](https://imposiblehangman.netlify.app/).
+Try it! [Imposible Hangman ](https://imposiblehangman.netlify.app/)
 
 # Getting Start
 ## Setup
 * git clone https://github.com/sevillecarlos/imposible-hang-man.git or Download the zip.
-### In the Terminal enter 
+### In the terminal enter 
 * cd /imposible-hang-man
 * npm install
 * npm run start
