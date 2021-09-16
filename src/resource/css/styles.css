@@ -97,7 +97,7 @@ h4 {
   text-align: center;
 }
 .definition-para {
-  font-size: 200%;
+  font-size: 175%;
   color: aliceblue;
 }
 .title {
@@ -107,8 +107,8 @@ h4 {
   letter-spacing: 1px;
 }
 .lines {
-  width: 4%;
-  height: 30px;
+  width: 2%;
+  height: 3rem;
   margin-left: 20px;
   margin-top: 1px;
   border-bottom: 3px solid RGBA(240, 248, 255, 0.51);
@@ -128,7 +128,7 @@ h4 {
   overflow: auto;
   height: 100%;
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 1%;
   border-radius: 50px;
   box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
@@ -136,7 +136,10 @@ h4 {
 }
 .container-hangman {
   text-align: center;
-  width: 100%;
+}
+
+#hangman {
+  width: 20%;
 }
 
 /***************************************************************************/
@@ -371,18 +374,5 @@ h4 {
   }
   .result {
     font-size: 50px;
-  }
-  .footer {
-    font-size: 12px;
-    padding: 6px;
-  }
-  .footer a {
-    text-decoration: none;
-    color: aliceblue;
-    box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px 5px 21px -9px rgba(0, 0, 0, 0.75);
-    padding: 10px;
-    border-radius: 50px;
   }
 }
