@@ -38,7 +38,7 @@ p {
   text-align: center;
   color: aliceblue;
   display: inline-block;
-  font-size: 200%;
+  font-size: 280%;
 }
 h4 {
   text-align: center;
@@ -97,7 +97,7 @@ h4 {
   text-align: center;
 }
 .definition-para {
-  font-size: 175%;
+  font-size: 250%;
   color: aliceblue;
 }
 .title {
@@ -108,11 +108,11 @@ h4 {
 }
 .lines {
   width: 2%;
-  height: 3rem;
+  height: 2rem;
   margin-left: 20px;
   margin-top: 1px;
   border-bottom: 3px solid RGBA(240, 248, 255, 0.51);
-  padding: 10px;
+  padding: 1%;
 }
 .result {
   font-size: 200%;
