@@ -97,16 +97,16 @@ h4 {
 .def-container {
   text-align: center;
   margin-bottom: 1%;
-
 }
 .definition-para {
   font-size: 1.8vw;
   color: aliceblue;
 }
 .title {
-  font-size:2vw;
+  font-size: 2vw;
   color: aliceblue;
   text-align: center;
+  padding: 0.2%;
   letter-spacing: 1px;
 }
 .lines {
@@ -118,7 +118,7 @@ h4 {
   padding: 1%;
 }
 .result {
-  font-size: 400%;
+  font-size: 5vw;
   text-align: center;
   color: rgb(143, 214, 36);
   letter-spacing: 5px;
@@ -131,7 +131,6 @@ h4 {
   height: 100%;
   text-align: center;
   border-radius: 50px;
-  
 }
 .container-hangman {
   text-align: center;
@@ -147,16 +146,16 @@ h4 {
   text-align: center;
 }
 
-.footer a{
+.footer a {
   text-decoration: none;
   color: white;
 }
-.footer a:visited{
+.footer a:visited {
   text-decoration: none;
   color: white;
 }
 
-.footer a:hover{
+.footer a:hover {
   color: rgb(95, 94, 94);
 }
 #hangman {
@@ -165,20 +164,15 @@ h4 {
 
 /***************************************************************************/
 /* Big tablets to 1200px*/
-@media only screen and (max-width: 1200px) {
-}
+/* @media only screen and (max-width: 1200px) {
+} */
 
 /* Small tablets to big tablets: from 768 to 1032*/
 @media only screen and (max-width: 1032px) {
-
-}
-
-/* Small phones to small tablets: from 481 to 767*/
-@media only screen and (max-width: 767px) {
   .container {
     width: 90%;
     border-radius: 50px;
-    margin: 10% auto;  
+    margin: 20% auto;
   }
   .title {
     font-size: 30px;
@@ -201,7 +195,7 @@ h4 {
     text-align: center;
   }
   .definition-para {
-    font-size: 20px;
+    font-size: 5vw;
   }
   #hangman {
     width: 100px;
@@ -220,32 +214,100 @@ h4 {
   }
   .lines {
     width: 6px;
-    height: 20px;
-    margin-left: 3px;
-    margin-top: 1px;
     padding: 10px;
   }
   button {
     border-radius: 15px;
-    padding: 10px 20px
+    padding: 10px 20px;
+  }
+  .def-container {
+    margin-bottom: 20px;
   }
   .result {
     font-size: 50px;
   }
   .footer {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
-/*Small Phone from 0 to 480px*/
-@media only screen and (max-width: 400px) {
+/* Small phones to small tablets: from 481 to 767*/
+@media only screen and (max-width: 767px) {
   .container {
     width: 90%;
     border-radius: 50px;
     margin: 10% auto;
   }
   .title {
-    font-size: 100%;
+    font-size: 30px;
+  }
+  .buttons-letters {
+    font-size: 20px;
+    width: 15px;
+  }
+  .btn-container {
+    margin: 2px 15px;
+  }
+  .reset-game-btn {
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+  }
+  .btn-show-word {
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+  }
+  .definition-para {
+    font-size: 5vw;
+  }
+  #hangman {
+    width: 100px;
+    height: 135px;
+    padding: 15px;
+  }
+  .text-container {
+    height: auto;
+    width: auto;
+    margin-top: 15px;
+    border-radius: 40px;
+    padding-bottom: 5px;
+  }
+  p {
+    font-size: 25px;
+  }
+  .lines {
+    width: 6px;
+    padding: 10px;
+  }
+  button {
+    border-radius: 15px;
+    padding: 10px 20px;
+  }
+  .def-container {
+    margin-bottom: 20px;
+  }
+  .result {
+    font-size: 50px;
+  }
+  .footer {
+    font-size: 20px;
+  }
+
+}
+
+/*Small Phone from 0 to 480px*/
+@media only screen and (max-width: 400px) {
+  p {
+    font-size: 20px;
+  }
+  .container {
+    width: 90%;
+    border-radius: 50px;
+    margin: 10% auto;
+  }
+  .title {
+    font-size: 24px;
   }
   .buttons-letters {
     font-size: 100%;
@@ -254,46 +316,25 @@ h4 {
   .btn-container {
     margin: 1px 10px;
   }
-  .reset-game-btn {
-    font-size: 10px;
-    padding: 5px;
-    text-align: center;
-  }
-  .btn-show-word {
-    font-size: 10px;
-    padding: 5px;
-    text-align: center;
-  }
-  .definition-para {
-    font-size: 15px;
+  .def-container {
+    margin-bottom: 15px;
   }
   #hangman {
     width: 90px;
     height: 125px;
     padding: 15px;
   }
-  .text-container {
-    width: auto;
-    overflow: auto;
-    height: 100%;
-    text-align: center;
-    border-radius: 50px;
-  }
-  p {
-    font-size: 20px;
-  }
   .lines {
-    width: 3px;
-    height: 5px;
-    margin-left: 3px;
-    margin-top: 1px;
-    padding: 10px;
+    text-align: center;
   }
   button {
     border-radius: 15px;
-    padding: 10px 20px
+    padding: 10px 20px;
   }
   .result {
     font-size: 50px;
+  }
+  .footer {
+    font-size: 15px;
   }
 }
