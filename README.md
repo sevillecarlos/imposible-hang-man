@@ -14,12 +14,18 @@ A classic game with a greater level of difficult to prove your deep knowledge of
 Try it! [Imposible Hangman ](https://imposiblehangman.netlify.app/)
 
 # Getting Start
-## Setup
-* git clone https://github.com/sevillecarlos/imposible-hang-man.git or Download the zip.
-### In the terminal enter 
-* cd /imposible-hang-man
-* npm install
-* npm run start
+```
+git clone https://github.com/sevillecarlos/clock.git
+```
+### or Download the zip.
+## Project setup
+```
+npm install
+```
+### Compiles and hot-reloads for development
+```
+npm run start
+```
 
 # Author
 ## Carlos Alberto Sevilla Fernandez
