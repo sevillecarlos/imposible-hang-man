@@ -5,11 +5,11 @@
 
 # Built
 ## Development Technologies
-- HTML 
-- CSS  
-- Javascript 
-## Bundler
-- Parcel 
+![](https://img.shields.io/badge/Front--End-HTML-orange)
+![](https://img.shields.io/badge/Front--End-CSS-blue)
+![](https://img.shields.io/badge/Programming--Language-JavaScript-yellow)
+![](https://img.shields.io/badge/Bundler-Parcel-brown)
+
 
 # Live Demo
 Try it! [Imposible Hangman ](https://imposiblehangman.netlify.app/)
