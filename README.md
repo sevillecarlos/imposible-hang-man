@@ -1,5 +1,6 @@
 # Imposible Hangman
-A classic game with a greater level of difficult to prove your deep knowledge of the language.
+> A classic game with a greater level of difficult to prove your deep knowledge of the language.
+
 ![Imposible Hangman Image!](/images/imposible-hangman-image.png "Imposible Hangman")
 
 # Built
